@@ -16,7 +16,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 15px 0;
     text-align: center;
-    color: #483127;
+    color: #5d453b;
     font-weight: 100;
 }
 
@@ -31,8 +31,8 @@ th {
     font-size: 15px;
     background-color: #fec89a;
     cursor: pointer;
+    font-weight: bold;
 }
-
 th:hover {
     background-color: #ffd7ba;
 }
