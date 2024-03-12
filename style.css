@@ -7,49 +7,53 @@
     font-family: sans-serif;
 }
 table {
-    width: 90%;
+    width: 100vw;
     margin: 50px auto;
     border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 15px 0;
     text-align: center;
+    color: #483127;
+    font-weight: 100;
+}
+
+td:nth-child(even) {
+    background-color: #f8edeb;
+}
+td:nth-child(odd) {
+    background-color: #ffe5d9;
 }
 
 th {
     font-size: 15px;
-    background-color: #f2f2f2;
+    background-color: #fec89a;
     cursor: pointer;
 }
 
 th:hover {
-    background-color: #ddd;
+    background-color: #ffd7ba;
 }
 
 /* Action Buttons Styling */
 .action-btns {
-    padding: 8px 6px;
+    padding: 3px 10px;
     cursor: pointer;
     margin-top: 3px;
     display: inline-block;
     color: white;
-    background-color: rgba(0, 0, 255, 0.678);
-    border: blue;
+    font-size: 16px;
+    background-color: #a68a64;
+    border: #a68a64;
     border-radius: 5px;
 }
 .action-btns:hover {
-    background-color: rgb(32, 32, 252);
+    background-color: #936639;
 }
 
-#actions {
-    width: 290px;
-}
 
-/* Adding Some Media Queries For Responsive */
-@media (max-width: 600px) {
-    table {
-        width: 100%;
-    }
+.actions {
+    width: 10vw;
 }
