@@ -1,226 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Table</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Data Table</h1>
-        <h2>Created By HTML & CSS</h2>
+      <h1>Data Table</h1>
     </header>
 
     <main>
-        <div class="container">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Select option</th>
-                        <th>ID</th>
-                        <th>Product Name</th>
-                        <th>Product title</th>
-                        <th>Product description</th>
-                        <th>Product vendor</th>
-                        <th>Buying price</th>
-                        <th>Sale price</th>
-                        <th>Product type</th>
-                        <th>Shipping rates</th>
-                        <th>Product location address</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- First Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1001</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone </td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor" >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-    
-                    <!-- Second Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1002</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone</td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-    
-                    <!-- Third Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1012</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone</td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-    
-                    <!-- Fourth Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1023</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone </td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor" >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-    
-                    <!-- Fifth Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1033</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone </td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor" >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-
-                    <!-- Sixth Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1001</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone </td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor" >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-
-                    <!-- Seventh Row Of Table -->
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1001</td>
-                        <td>iPhone</td>
-                        <td>Apple iPhone </td>
-                        <td>iPhone model with advanced features</td>
-                        <td>Apple Inc.</td>
-                        <td>$799.00</td>
-                        <td>$999.00</td>
-                        <td>Electronics</td>
-                        <td>$10.00</td>
-                        <td>Lahore , Pakistan</td>
-                        <td class="actions">
-                            <button class="action-btns" title="Add Vendor" >
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Add Products">
-                                <i class="fa fa-paperclip" aria-hidden="true"></i>
-                            </button>
-                            <button class="action-btns" title="Edit Products">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+      <div class="search-box">
+        <div class="searchBox-left">
+          <input type="text" placeholder="Search here..." id="searchInput" autocomplete="off" />
+        <button id="searchButton">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
         </div>
+         <!-- <br> <br> -->
+        <div class="searchBox-right">
+          <input type="text" placeholder="Add Column..." id="addColumn" autocomplete="off" />
+        <button id="addColumnButton">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <table>
+          <thead>
+            <tr id="tableHead">
+              <th>Select option</th>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Product title</th>
+              <th>Product description</th>
+              <th>Product vendor</th>
+              <th>Buying price</th>
+              <th>Sale price</th>
+              <th>Product type</th>
+              <th>Shipping rates</th>
+              <th>Product location address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- First Row Of Table -->
+            <tr class="tableRows">
+              <td><input type="checkbox" /></td>
+              <td class="tableData" >1</td>
+              <td class="tableData">Nike Air Zoom Pegasus 37</td>
+              <td class="tableData">Nike Air Zoom Pegasus 37 Running Shoes</td>
+              <td class="tableData">
+                The Nike Air Zoom Pegasus 37 offers responsive cushioning and a
+                lightweight design for running.
+              </td>
+              <td class="tableData">Nike, Inc.</td>
+              <td class="tableData">$120.00</td>
+              <td class="tableData">$150.00</td>
+              <td class="tableData">Fitness</td>
+              <td class="tableData">$8.00</td>
+              <td class="tableData">One Bowerman Drive, Beaverton, OR</td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products" >
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Second Row Of Table -->
+            <tr class="tableRows">
+              <td class="tableData"><input type="checkbox" /></td>
+              <td class="tableData">2</td>
+              <td class="tableData">iPhone 12</td>
+              <td class="tableData">Apple iPhone 12</td>
+              <td>
+                The iPhone 12 is a powerful device with a Super Retina XDR
+                display and A14 Bionic chip.
+              </td>
+              <td class="tableData">Apple Inc.</td>
+              <td class="tableData">$799.00</td>
+              <td class="tableData">$999.00</td>
+              <td class="tableData">Electronics</td>
+              <td class="tableData">$5.00</td>
+              <td class="tableData">1 Infinite Loop, Cupertino, CA</td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Third Row Of Table -->
+            <tr class="tableRows">
+              <td class="tableData"><input type="checkbox" /></td>
+              <td class="tableData">3</td>
+              <td class="tableData">Samsung Galaxy S21</td>
+              <td class="tableData">Samsung Galaxy S21 Ultra</td>
+              <td class="tableData">
+                The Samsung Galaxy S21 is a flagship smartphone featuring a
+                stunning display and powerful camera.
+              </td>
+              <td class="tableData">Samsung Electronics</td>
+              <td class="tableData">$999.00</td>
+              <td class="tableData">$1199.00</td>
+              <td class="tableData">Electronics</td>
+              <td class="tableData">$7.00</td>
+              <td class="tableData">
+                129 Samsung-ro, Maetan 3(sam)-dong, Yeongtong-gu, Suwon,
+                Gyeonggi-do, South Korea
+              </td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Fourth Row Of Table -->
+            <tr class="tableRows">
+              <td class="tableData"><input type="checkbox" /></td>
+              <td class="tableData">4</td>
+              <td class="tableData">Sony PlayStation 5</td>
+              <td class="tableData">Sony PlayStation 5 Console</td>
+              <td class="tableData">
+                The Sony PlayStation 5 delivers immersive gaming experiences
+                with powerful hardware and advanced features.
+              </td>
+              <td class="tableData">Sony Corporation</td>
+              <td class="tableData">$499.99</td>
+              <td class="tableData">$599.99</td>
+              <td class="tableData">Gaming</td>
+              <td class="tableData">$10.00</td>
+              <td class="tableData">1-7-1 Konan, Minato-ku, Tokyo, Japan</td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Fifth Row Of Table -->
+            <tr class="tableRows">
+              <td class="tableData"><input type="checkbox" /></td>
+              <td class="tableData">5</td>
+              <td class="tableData">Amazon Echo Dot</td>
+              <td class="tableData">Amazon Echo Dot (4th Gen)</td>
+              <td class="tableData">
+                The Amazon Echo Dot is a smart speaker with Alexa, perfect for
+                controlling your smart home devices.
+              </td>
+              <td class="tableData">Amazon.com, Inc.</td>
+              <td class="tableData">$29.99</td>
+              <td class="tableData">$49.99</td>
+              <td class="tableData">Electronics</td>
+              <td class="tableData">$5.00</td>
+              <td class="tableData">410 Terry Ave. North, Seattle, WA</td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Sixth Row Of Table -->
+            <tr class="tableRows">
+              <td class="tableData"><input type="checkbox" /></td>
+              <td class="tableData">6</td>
+              <td class="tableData">Canon EOS Rebel T7</td>
+              <td class="tableData">Canon EOS Rebel T7 DSLR Camera</td>
+              <td class="tableData">
+                The Canon EOS Rebel T7 is a versatile DSLR camera suitable for
+                beginners and enthusiasts.
+              </td>
+              <td class="tableData">Canon Inc.</td>
+              <td class="tableData">$399.00</td>
+              <td class="tableData">$499.00</td>
+              <td class="tableData">Electronics</td>
+              <td class="tableData">$15.00</td>
+              <td class="tableData">30-2, Shimomaruko 3-chome, Ohta-ku, Tokyo 146-8501, Japan</td>
+              <td class="actions">
+                <button class="action-btns" title="Add Vendor">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns" title="Add Products">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </button>
+                <button class="action-btns editProduct" title="Edit Products" id="modal-btn">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Seventh Row Of Table -->
+            </tbody>
+        </table>
+      </div>
     </main>
 
+    <!-- Modal -->
+<div id="modalContainer">
 
-</body>
+    <!-- Modal Content -->
+    <div class="modal-content">
+      <h2>Edit Products</h2>
+
+      <div class="inputBox">
+        <div class="left">
+          <div class="inputs">
+            <label for="productID">ID</label>
+            <input type="tel" id="productID">
+          </div>
+          <div class="inputs">
+            <label for="producTitle">Product Title</label>
+            <input type="text" id="productTitle">
+          </div>
+          <div class="inputs">
+            <label for="buyingPrice">Buying Price</label>
+            <input type="text" id="buyingPrice">
+          </div>
+          <div class="inputs">
+            <label for="shippingRates">Shipping Rates</label>
+            <input type="text" id="shippingRates">
+          </div>
+        </div>
+        <div class="right">
+          <div class="inputs">
+            <label for="PName">Product Name</label>
+            <input type="text" id="productName">
+          </div>
+          <div class="inputs">
+            <label for="producDesc">Product Descr:</label>
+            <input type="text" id="productDesc">
+          </div>
+          <div class="inputs">
+            <label for="salePrice">Sale Price</label>
+            <input type="text" id="salePrice">
+          </div>
+          <div class="inputs">
+            <label for="location">Location</label>
+            <input type="text" id="plocation">
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button>Update</button>
+        <button id="mcloseButton">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- &times; -->
+
+
+    <script src="script.js"></script>
+  </body>
 </html>

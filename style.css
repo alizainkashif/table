@@ -1,40 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
 /* Use Universal Selector to reset default settings */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 header {
     text-align: center;
-    background-color: #ebac76;
-    padding: 1px;
+    padding: 20px 0;
 }
 header h1 {
-    color: #936639;
+    font-size: 42px;
+    color: #015eea;
     font-family:'Segoe UI';
     margin: 10px 0;
 }
-header h2 {
-    color: rgb(154, 75, 47);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px 0;
-}
-main {
-    width: 100%;
-    height: 85vh;
-    padding: 50px 0;
-    background-color:#cdd1b1;
-}
+/* main { */
+    /* width: 100%; */
+/* } */
 .container {
     width: 80%;
     margin: 0 auto;
     overflow:auto;
     border-radius: 6px;
+    padding-top: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
 }
 table {
     border-collapse: collapse;
+    background-color: #fff;
+    /* padding: 10px; */
 }
 
 th, td {
@@ -42,25 +41,14 @@ th, td {
     border: 1px solid #ddd;
     padding: 15px 10px;
     text-align: center;
-    color: #483127;
     font-weight: 100;
 }
 
-td:nth-child(even) {
-    background-color: #f8edeb;
-}
-td:nth-child(odd) {
-    background-color: #ffe5d9;
-}
-
 th {
-    font-size: 15px;
-    background-color: #fec89a;
+    font-size: 18px;
     cursor: pointer;
-}
-
-th:hover {
-    background-color: #ffd7ba;
+    color: #fff;
+    background-color: #015eea;
 }
 
 /* Action Buttons Styling */
@@ -71,12 +59,12 @@ th:hover {
     display: inline-block;
     color: white;
     font-size: 16px;
-    background-color: #a68a64;
+    background-color: #4070f4;
     border: #a68a64;
     border-radius: 5px;
 }
 .action-btns:hover {
-    background-color: #936639;
+    background-color: #015eeaa9;
 }
 
 ::-webkit-scrollbar {
@@ -84,20 +72,160 @@ th:hover {
   }
   
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #fff; 
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #d7beba;
-    border-radius: 6px; 
+    background: #4070f4;
+    border-radius: 3px;
+    padding: 5px 0; 
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #867876;
+    background: #4070f4;
   }
   
 
 
 .actions {
     width: 10vw;
+}
+
+
+/* Modal */
+
+/* Modal Styles */
+#modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Modal Content Styles */
+  .modal-content {
+    background-color: #fefefe; 
+    margin: 5% auto; 
+    padding: 20px;
+    width: 55%;
+  }
+  .modal-content h2 {
+    text-align: center;
+    background-color:#015eea;
+    color: #fff;
+    padding:20px 0 ;
+    font-size: 27px;
+  }
+
+  .modal-content .inputBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  .modal-content .inputBox .left {
+    width: 50%;
+    /* background-color: #a68a64; */
+  }
+
+  .modal-content .inputBox .right {
+    width: 50%;
+    /* background-color: #015eea; */
+  }
+  .modal-content .inputBox .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .modal-content .inputBox .inputs label {
+    padding: 10px;
+    font-weight: bold;
+    width: 50%;
+  }
+  .modal-content .inputBox .inputs input {
+    width: 80%;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .modal-content .buttons {
+    text-align: end;
+  }
+  .modal-content button {
+    padding: 8px 17px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #015eea;
+    color: #fff;
+    border-radius:5px;
+  }
+
+
+
+  /* SearchBar */
+  .search-box {
+    width: 80%;
+    margin-left: 154px;
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #015eea; */
+    border-radius: 5px;
+}
+.searchBox-left,
+.searchBox-right {
+  width: 27%;
+  border: 2px solid #015eea;
+}
+.searchBox-left input:focus,
+.searchBox-right input:focus {
+  border-color: #015eea;
+  /* border: 2px solid; */
+}
+.search-box input {
+  width: 85%;
+    padding: 10px;
+    border: none;
+    /* border-radius: 5px 0 0 5px; */
+    background: #fff;
+    color: #015eea;
+}
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    /* border-radius: 0 5px 5px 0; */
+    background: #fff;
+    color: #015eea;
+    cursor: pointer;
+}
+.search-box button i {
+    font-size: 14px;
+}
+.search-box button:hover {
+    background-color: #015eea;
+    color: #fff;
+}
+
+
+@media (max-width:700px) {
+  .container {
+    width: 95%;
+  }
+  .modal-content .inputBox {
+    flex-wrap: wrap;
+  }
+  .modal-content .inputBox .left {
+    width: 100%;
+  }
+  .modal-content .inputBox .right {
+    width: 100%;
+  }
 }

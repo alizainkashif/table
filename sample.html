@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        .search-box {
+            width: 50%;
+            padding: 20px;
+            background-color: #015eea;
+            border-radius: 5px;
+        }
+        .search-box input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            background: #fff;
+        }
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background: #fff;
+            color: #015eea;
+            cursor: pointer;
+        }
+        .search-box button i {
+            font-size: 14px;
+        }
+        .search-box button:hover {
+            background-color: #015eea;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Search here..." id="searchInput" />
+        <button id="searchbutton">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    <script>
+        let data = document.querySelector('#data')
+        let input = document.querySelector('#input')
+        let button = document.querySelector('#button')
+        console.log(data)
+        console.log(input)
+        console.log(button)
+
+        button.addEventListener('click',function () {
+            input.value = data.innerHTML
+            console.log('okey')
+        })
+    </script>
+</body>
+</html>
